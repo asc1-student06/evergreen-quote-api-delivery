@@ -4,7 +4,7 @@
 
 ## Goal
 
-> _One sentence here._
+By Thursday EOD, the assembled Evergreen Quote API (REST + GraphQL, backed by MongoDB, with the sponsor's rates) is merged to main through a reviewed PR with green CI, and demonstrated running in a container and as 3 replicas on a local Kubernetes cluster.
 
 ## "Done" looks like
 
@@ -18,4 +18,7 @@
 
 ## Out of scope (this week)
 
-- _What you are intentionally not doing._
+- Writing new features or refactoring the starter (assembly, not authoring)
+- Connecting the marketing site to the API
+- A live AWS/EKS deploy (unless the sponsor approves a window)
+- Logins, payments, or policy bindings
