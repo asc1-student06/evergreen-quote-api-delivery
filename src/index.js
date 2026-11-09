@@ -39,3 +39,4 @@ await connectDB();
 app.listen(PORT, () => {
   console.log(`${process.env.SERVICE_NAME ?? "CHANGEME"} on http://localhost:${PORT}`);
 });
+
