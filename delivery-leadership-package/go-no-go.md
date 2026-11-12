@@ -32,3 +32,6 @@ Observed: Support reports every quote request is returning a 400 ("age(34) is le
 Asking for: Can on-call confirm what is actually deployed in front of customers right now, and whether anything went out around the pipeline (for example, a deploy from a branch or a manual change)? Can the team also look at what changed in the last hour and get customers quoting again, rolling back if that's fastest? Support, please share roughly how many customers were affected.
 Owner: The on-call engineer owns the investigation and hot fix. I own the stakeholder comm and the merge plan. 
 Air cover: The tests did their job by refusing this change. Take the time you need; I'm parking the site deploy review and will move today's check in if we need the time. I'm also holding all merges to main until its green.
+
+## Day 4 Update
+Re-evaluated at Thursday's check-in: 'main', confirmed green, customers quoting again. Conditions met, so the call is now GO for the merge.
