@@ -24,11 +24,11 @@
 
 ## My call
 
-NO-GO. My branch is green and doesn't contain the hotfix, but 'main' is read and customers are being rejected, so I won't merge onto a broken 'main' during a live incident. What would flip it: a green run on 'main', customers quoting again, and an answer on how the change got around the gate.
+NO-GO. My branch is green and doesn't contain the hotfix, but 'main' is red and customers are being rejected, so I won't merge onto a broken 'main' during a live incident. What would flip it: a green run on 'main', customers quoting again, and an answer on how the change got around the gate.
 
 ## Incident response (Inject #2 routing message)
 To: Engineering on-call; cc Support and Priya (Sponsor)
-Observed: Support reports every quote request is returning a 400 ("age(34) is less than min allowed value (110)"). Separately, CI on main has been red at the test step since the validation hotfix about 40 mins ago. A red run doesn't procude a build, so the change customers are hitting must have reached prod some other way.
+Observed: Support reports every quote request is returning a 400 ("age(34) is less than min allowed value (110)"). Separately, CI on main has been red at the test step since the validation hotfix about 40 mins ago. A red run doesn't produce a build, so the change customers are hitting must have reached prod some other way.
 Asking for: Can on-call confirm what is actually deployed in front of customers right now, and whether anything went out around the pipeline (for example, a deploy from a branch or a manual change)? Can the team also look at what changed in the last hour and get customers quoting again, rolling back if that's fastest? Support, please share roughly how many customers were affected.
 Owner: The on-call engineer owns the investigation and hot fix. I own the stakeholder comm and the merge plan. 
 Air cover: The tests did their job by refusing this change. Take the time you need; I'm parking the site deploy review and will move today's check in if we need the time. I'm also holding all merges to main until its green.
